@@ -11,12 +11,27 @@ h1 {
   margin-bottom: 30px;
 }
 
-.malla {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+.anio {
+  margin-bottom: 40px;
+}
+
+.ciclo {
+  margin-bottom: 20px;
+}
+
+.titulo-anio,
+.titulo-ciclo {
+  font-weight: bold;
+  color: #d63384;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .curso {
@@ -29,6 +44,8 @@ h1 {
   transition: all 0.3s ease;
   opacity: 0.6;
   user-select: none;
+  min-width: 200px;
+  max-width: 220px;
 }
 
 .curso.activo {
@@ -41,4 +58,3 @@ h1 {
   color: white;
   font-weight: bold;
 }
-
