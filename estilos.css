@@ -1,1 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.curso {
+  padding: 10px;
+  border: 2px solid #d63384;
+  background-color: #ffe6f0;
+  color: #333;
+  cursor: not-allowed;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+  user-select: none;
+}
+
+.curso.activo {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.curso.aprobado {
+  background-color: #ff69b4;
+  color: white;
+  font-weight: bold;
+}
 
